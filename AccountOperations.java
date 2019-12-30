@@ -64,7 +64,7 @@ import javax.security.auth.login.AccountNotFoundException;
 				}	
 			
 		
-			}
+			
 		
 		
 				try{
@@ -76,7 +76,7 @@ import javax.security.auth.login.AccountNotFoundException;
 					System.out.println(e.getMessage());
 				}
 
-				}	}
+				}	}}
 	
 	
 	
@@ -95,7 +95,7 @@ import javax.security.auth.login.AccountNotFoundException;
 			try{
 				if(flag==0)
 					throw new AccountNumberNotFoundException();
-					System.out.println("Successfully deposited the amount");
+					//System.out.println("Successfully deposited the amount");
 				}
 			catch(AccountNumberNotFoundException e){
 				System.out.println(e.getMessage());
