@@ -1,53 +1,43 @@
-import org.omg.CORBA.PRIVATE_MEMBER;
+package collectionlearnig;
 
 public class Account {
-
-
-		// TODO Auto-generated method stub
-		private int accountNumber;
-		private String customerName;
-		private double balance;
-		
-		
-	/*	public Account(){
-			accountNumber=123;
-			customerName="veera";
-			balance=4567
-		}*/
-		
-		
-		public int getAccountNumber() {
-			return accountNumber;
-		}
-		public Account() {
-			super();
-		}
-		public Account(int accountNumber, String customerName, double balance) {
+	private int accno;
+	private String custname;
+	private double balance;
+	
+	public Account() {
 		super();
-		this.accountNumber = accountNumber;
-		this.customerName = customerName;
+	}
+
+	public Account(int accno, String custname, double balance) {
+		super();
+		this.accno = accno;
+		this.custname = custname;
 		this.balance = balance;
 	}
-		public void setAccountNumber(int accountNumber) {
-			this.accountNumber = accountNumber;
-		}
-		public String getCustomerName() {
-			return customerName;
-		}
-		public void setCustomerName(String customerName) {
-			this.customerName = customerName;
-		}
-		public double getBalance() {
-			return balance;
-		}
-		public void setBalance(double balance) {
-			this.balance = balance;
-		}
 
-		
+	public int getAccno() {
+		return accno;
 	}
 
+	public void setAccno(int accno) {
+		this.accno = accno;
+	}
 
+	public String getCustname() {
+		return custname;
+	}
 
+	public void setCustname(String custname) {
+		this.custname = custname;
+	}
 
+	public double getBalance() {
+		return balance;
+	}
 
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+}
